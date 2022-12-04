@@ -1,3 +1,4 @@
+// jshint esversion:6
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
