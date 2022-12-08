@@ -32,19 +32,25 @@ function App() {
 
   return (
     <div className="app">
-    <h1>Let build Snapchat Klone</h1>
+    {/* <h1>Let build Snapchat Klone</h1> */}
       <Router>
         {!user ? (
           <Login />
         ): (
+        <>
+          <img className='app__logo' src="https://1000logos.net/wp-content/uploads/2017/08/Snapchat-logo.png" alt="" />
           <div className="app__body">
-            <Routes>
-              <Route path='/chats/view' element={<ChatView />} />
-              <Route exact path='/' element={<WebcamCapture />} />
-              <Route path='/preview' element={<Preview />} />
-              <Route path='/chats' element={<Chats />} />
-            </Routes>
+            <div className="app__bodyBackground">
+              <Routes>
+                <Route path='/chats/view' element={<ChatView />} />
+                <Route exact path='/' element={<WebcamCapture />} />
+                <Route path='/preview' element={<Preview />} />
+                <Route path='/chats' element={<Chats />} />
+              </Routes>
+            </div>
+            
           </div>
+        </>
         )}
         
       </Router>

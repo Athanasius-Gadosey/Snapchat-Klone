@@ -23,7 +23,7 @@ function Login() {
   return (
     <div className="login">
         <div className="login__container">
-            <img src="https://static.vecteezy.com/system/resources/previews/002/432/911/original/social-media-snapchat-original-latest-logo-free-vector.jpg" alt="" />
+            <img src="https://1000logos.net/wp-content/uploads/2017/08/Snapchat-logo.png" alt="" />
             <Button variant='outlined' onClick={signIn}>Sign in</Button>
         </div>
     </div>
